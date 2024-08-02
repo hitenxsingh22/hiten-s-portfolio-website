@@ -1,0 +1,205 @@
+.logo-container {
+    z-index: 0;
+    position: absolute;
+    width: 550px;
+    height: 700px;
+    top: -1%;
+    bottom: 0px;
+    margin-bottom: 120px;
+    left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .outline-logo {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        transform-origin: center;
+        animation: drawGlow 4s infinite; /* Continuous glowing and drawing effect */
+    }
+
+    .solid-logo {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        opacity: 0;
+        animation: fadeInScale 3s forwards ease;
+        transform-origin: center;
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0; /* Final position */
+        }
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes drawGlow {
+        0% {
+            stroke-dasharray: 800; /* Adjust this based on the exact path length */
+            stroke-dashoffset: 800;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7))
+                    drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+        50% {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 0;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1))
+                    drop-shadow(0 0 30px rgba(255, 255, 255, 0.7));
+        }
+        100% {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 800;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7))
+                    drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 400px;
+        height: 500px;
+        margin-bottom: 80px;
+        left: 300px;
+    }
+
+    @media (max-width: 480px) {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
+        left: 150px;
+        top: 0;
+     
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 280px;
+    top: 30%;
+
+    // svg{
+    //     height: 50px;
+    //     width: 50px;
+    // }
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 850px) {
+    .logo-container {
+        position: absolute;
+        height: 200px;
+        width: 370px;
+        bottom: 0;
+        top: 600px;
+        right: 0;
+        left: 150px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1190px){
+
+    .logo-container {
+        position: absolute;
+        // height: 200px;
+        // width: 400px;
+      
+        top: 500px;
+        
+        left: 160px;
+    }
+
+}
+
+@media (min-width: 1350px) and (max-width: 1600px){
+    .logo-container {
+        position: absolute;
+      
+      
+        top: 10px;
+        
+        left: 590px;
+        width: 750px;
+    }
+
+    .home-page{
+        margin-left: -40px;
+          h1{
+            font-size: 38px;
+          } 
+        h2{
+            font-size: 28px;
+        }
+    }
+
+}
+
+@media (min-width: 1601px) and (max-width: 1800px){
+    .logo-container {
+        position: absolute;
+      
+      
+        top: 15px;
+        
+        left: 650px;
+        width: 800px;
+    }
+
+    .home-page{
+        margin-left: -70px;
+          h1{
+            font-size: 38px;
+          } 
+        h2{
+            font-size: 28px;
+        }
+    }
+
+}
+@media (min-width: 1801px) and (max-width: 2500px){
+    .logo-container {
+        position: absolute;
+      
+      
+        top: 90px;
+        
+        left: 770px;
+        width: 920px;
+    }
+
+    .home-page{
+        margin-left: -110px;
+          h1{
+            font-size: 60px;
+          } 
+        h2{
+            font-size: 30px;
+        }
+
+        .flat-button{
+            font-size: 25px;
+
+        }
+    }
+
+}

@@ -1,0 +1,275 @@
+.contact-page {
+    width:50%;
+    margin-left: 100px;
+    .text-zone {
+
+        width: 50%;
+        h1 {
+
+
+            color: #ffd700;
+            font-size: 39px;
+        }
+        p {
+            color: #9e8d5f;
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Coolvetica', sans-serif; /* Ensure fallback font is specified */
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            padding: 5px 0;
+            margin: 0;
+            overflow: hidden;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            display: block;
+            position: relative;
+            clear: both;
+            font-family: 'Coolvetica', sans-serif; /* Ensure fallback font is specified */
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'], input[type='email'] {
+        width: 100%;
+        background: rgba(58, 51, 51, 0.829);
+        height: 50px;
+        color: #fff;
+        border: 0;
+        padding: 20px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        background: rgba(58, 51, 51, 0.829);
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        min-height: 150px;
+   
+    }
+
+    .flat-button {
+        color: #ffd700;
+        letter-spacing: 3px;
+        font-size: 11px; /* Updated property from font to font-size */
+        background: 0 0;
+        float: right;
+        border: 1px solid #ffd700;
+        padding: 8px 8px;
+        text-decoration: none;
+        border-radius: 4px;
+
+    }
+}
+
+.info-map{
+    position: absolute;
+    z-index: 999999;
+    top: 430px;
+    right: 3%;
+    color: #fff;
+    padding:20px;
+    width: 157px;
+    height: 80px;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+    background: black;
+
+    span{
+        font-size: 11px;
+        display: block;
+        padding-top: 20px;
+        color: #ffd700;
+
+    }
+}
+
+.map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    width: 53%;
+    top: 0px;
+    right:0px;
+    height: 90%; /* Set a fixed height to make sure it displays */
+   margin: 35px 30px 0 0 ;
+
+
+    position: absolute; /* Ensure proper positioning */
+}
+
+.leaflet-container{
+    width:100%;
+    height:100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+
+@media (max-width: 490px){
+    .contact-page{
+        max-height: 50%;
+        width: 100%;
+    }
+
+    .map-wrap{
+        position: absolute;
+        top:700px;
+        max-height: 50%;
+        width: 80%;
+    }
+
+    .info-map{
+        top: 733px;
+        font-size: smaller;
+        width: 140px;
+        padding: 0;
+        padding-left: 3px;
+        padding-top: 2px;
+        right: 29.5px;
+
+
+    }
+}
+
+@media (min-width: 492px) and (max-width: 820px){
+  .contact-page{
+//    position: absolute;
+   margin-top: 120px;
+   font-size: 4px;
+  }
+
+  .map-wrap{
+    height: 800px;
+    margin-top: 90px;
+  }
+
+  .info-map{
+    top: 90px;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1600px) {
+    .contact-page{
+        margin-left: 137px;
+        margin-top: 2px;
+        .text-zone{
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (min-width: 1601px) and (max-width: 1800px) {
+    .contact-page{
+        margin-left: 167px;
+        margin-top: 10px;
+
+        
+
+        .contact-form{
+            font-size: 30px;
+        }
+        .text-zone{
+
+            h1{
+                font-size: 59px;
+            }
+            p{
+                font-size: 21px;
+            }
+        }
+    }
+
+    .info-map{
+        top:660px;
+        right: 100px;
+        font-size: 18px;
+      height:140px;
+      width: 190px;
+
+  span{
+        font-size: 16px;
+      }
+
+    }
+}
+@media (min-width: 1801px) {
+    .contact-page{
+        margin-left: 167px;
+        margin-top: 10px;
+
+        
+
+        .contact-form{
+            font-size: 30px;
+
+            .flat-button {
+                color: #ffd700;
+                letter-spacing: 3px;
+                font-size: 19px; /* Updated property from font to font-size */
+                background: 0 0;
+                float: right;
+                border: 1px solid #ffd700;
+                padding: 8px 8px;
+                text-decoration: none;
+                border-radius: 4px;
+        
+            }
+        }
+        .text-zone{
+
+            h1{
+                font-size: 69px;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .info-map{
+        top:780px;
+        right: 100px;
+        font-size: 18px;
+      height:140px;
+      width: 190px;
+
+  span{
+        font-size: 16px;
+      }
+
+    }
+ 
+}

@@ -1,0 +1,15 @@
+.pacman-loader {
+    @import '~loaders.css/src/animations/pacman.scss';
+  }
+  
+  .loaders-active {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
